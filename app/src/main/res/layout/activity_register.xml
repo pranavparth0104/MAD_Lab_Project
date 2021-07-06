@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/tv_title"
+        android:layout_width="98dp"
+        android:layout_height="98dp"
+        android:layout_above="@id/tv_subtitle"
+
+
+        android:layout_marginTop="48dp"
+        android:background="@drawable/user"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:fontFamily="@font/bungee_shade"
+        android:text="@string/signup"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        android:layout_width="325dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle"
+        android:layout_marginTop="15dp"
+        app:hintTextAppearance="@color/black"
+        app:hintTextColor="@color/black"
+
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_register_name"
+            android:layout_width="325dp"
+            android:layout_height="48dp"
+            android:layout_above="@id/text"
+
+            android:hint="User Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+
+            android:background="@drawable/et_custom"
+
+            android:padding="15dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regemail"
+        android:layout_width="325dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:layout_marginTop="15dp"
+        app:hintTextAppearance="@color/black"
+        app:hintTextColor="@color/black"
+
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_register_email"
+            android:layout_width="325dp"
+            android:layout_height="48dp"
+            android:layout_above="@id/text"
+
+            android:hint="@string/email"
+            android:textColor="@color/black"
+
+            android:inputType="textEmailAddress"
+            android:background="@drawable/et_custom"
+
+            android:padding="15dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+    />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/pass_reg"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        tools:ignore="MissingConstraints"
+        android:layout_centerInParent="true"
+        app:hintTextAppearance="@color/black"
+        app:hintTextColor="@color/black"
+
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regemail" >
+
+        <EditText
+            android:id="@+id/edit_register_password"
+
+            android:layout_width="325dp"
+            android:layout_height="48dp"
+            android:textColor="@color/black"
+
+
+            android:background="@drawable/et_custom"
+            android:layout_marginTop="0dp"
+
+            android:hint="@string/password"
+
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/pass_rereg"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        tools:ignore="MissingConstraints"
+        android:layout_centerInParent="true"
+        app:hintTextAppearance="@color/black"
+        app:hintTextColor="@color/black"
+
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass_reg" >
+
+        <EditText
+            android:id="@+id/edit_register_repassword"
+
+            android:layout_width="325dp"
+            android:layout_height="48dp"
+
+            android:textColor="@color/black"
+
+            android:background="@drawable/et_custom"
+            android:layout_marginTop="0dp"
+
+            android:hint="@string/re_enter_password"
+
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_custom"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass_rereg" />
+
+    <ProgressBar
+        android:id="@+id/preg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_register" />
+
+    <TextView
+        android:id="@+id/clickToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="30dp"
+        android:text="@string/already_have_acc_login"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/black"
+    app:cardCornerRadius="10dp"
+
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <agency.tango.android.avatarview.views.AvatarView
+                android:id="@+id/postImages"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+
+                android:layout_margin="5sp"
+                app:av_border_color="@android:color/white"
+                app:av_border_width="2dp"
+                app:av_text_size_percentage="35"
+                android:src="@drawable/user"/>
+
+            <TextView
+                android:id="@+id/postName"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="@string/username"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/postImage"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:padding="10dp"
+
+
+            android:src="@drawable/worldwide"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/like_Button"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_disliked"
+                    android:background="@color/black"/>
+                <ImageButton
+                    android:id="@+id/comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@color/black"
+                    android:src="@drawable/ic_comment"/>
+
+            </LinearLayout>
+            <TextView
+                android:paddingLeft="10dp"
+                android:id="@+id/likes_textview"
+                android:layout_width="wrap_content"
+                android:textSize="20sp"
+                android:hint="@string/likes"
+                android:text="@string/likes"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/captionPost"
+            android:layout_width="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingTop="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+
+            android:textStyle="bold"
+            android:text="@string/username"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/timePost"
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:paddingLeft="15dp"
+
+            android:textSize="10sp"
+            android:textColor="@color/white"
+
+            android:textStyle="italic"
+            android:text="@string/username"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>
